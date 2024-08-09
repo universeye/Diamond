@@ -13,6 +13,7 @@
 		BF5D0CC72C6488F900ECD9B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF5D0CC62C6488F900ECD9B8 /* Assets.xcassets */; };
 		BF5D0CCA2C6488F900ECD9B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF5D0CC92C6488F900ECD9B8 /* Preview Assets.xcassets */; };
 		BF5D0CD32C64896F00ECD9B8 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = BF5D0CD22C64896F00ECD9B8 /* KeyboardShortcuts */; };
+		BFF583922C65E50C00734C86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF583912C65E50C00734C86 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,8 @@
 		BF5D0CC62C6488F900ECD9B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF5D0CC92C6488F900ECD9B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF5D0CCB2C6488F900ECD9B8 /* Diamond.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Diamond.entitlements; sourceTree = "<group>"; };
+		BFF583912C65E50C00734C86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BFF583972C65F24600734C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +59,9 @@
 		BF5D0CC12C6488F800ECD9B8 /* Diamond */ = {
 			isa = PBXGroup;
 			children = (
+				BFF583972C65F24600734C86 /* Info.plist */,
 				BF5D0CC22C6488F800ECD9B8 /* DiamondApp.swift */,
+				BFF583912C65E50C00734C86 /* AppDelegate.swift */,
 				BF5D0CC42C6488F800ECD9B8 /* ContentView.swift */,
 				BF0A24CB2C64EB0B0083495A /* GeneralSettingsView.swift */,
 				BF5D0CC62C6488F900ECD9B8 /* Assets.xcassets */,
@@ -150,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFF583922C65E50C00734C86 /* AppDelegate.swift in Sources */,
 				BF5D0CC52C6488F800ECD9B8 /* ContentView.swift in Sources */,
 				BF5D0CC32C6488F800ECD9B8 /* DiamondApp.swift in Sources */,
 				BF0A24CC2C64EB0B0083495A /* GeneralSettingsView.swift in Sources */,
@@ -291,15 +297,17 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Diamond/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Diamond;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = co.terrykuo.Diamond;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -321,15 +329,17 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Diamond/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Diamond;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = co.terrykuo.Diamond;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

@@ -15,15 +15,21 @@ struct RandomStringGeneratorApp: App {
     
     var body: some Scene {
         WindowGroup {
-            SettingsView()
+            GeneralSettingsView()
         }
+        .defaultSize(CGSize(width: 450, height: 350))
         
-        Window("What's New", id: "whats-new") {
-            SettingsView()
+        Window("Settings", id: "settings") {
+            GeneralSettingsView()
         }
+        .defaultSize(CGSize(width: 450, height: 350))
         
         Settings {
-            SettingsView()
+            TabView {
+                GeneralSettingsView()
+                    .tabItem { Label("Settings", systemImage: "gearshape") }
+            }
+            
         }
     }
 }
