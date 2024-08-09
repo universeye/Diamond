@@ -12,6 +12,7 @@ import KeyboardShortcuts
 class AppDelegate: NSObject, NSApplicationDelegate {
     var statusBarItem: NSStatusItem!
     var popover: NSPopover!
+    private let userdefaults = UserDefaults.standard
     
     func applicationDidFinishLaunching(_ notification: Notification) {
         statusBarItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
@@ -73,6 +74,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func generateRandomString() -> String {
         let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-        return String((0..<10).map{ _ in letters.randomElement()! })
+        if let number = userdefaults.object(forKey: "selectedNumber") as? Int {
+            return String((0..<number).map{ _ in letters.randomElement()! })
+        } else {
+            return String((0..<10).map{ _ in letters.randomElement()! })
+        }
     }
 }

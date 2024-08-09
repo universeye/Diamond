@@ -12,11 +12,29 @@ struct GeneralSettingsView: View {
     @State private var settingOneValue = false
     @State private var settingTwoValue = false
     @State private var settingThreeValue = false
+    @State private var isShowWelcome = false
+    @AppStorage("selectedNumber") var selectedNumber: Int = 10
     
     var body: some View {
         Form {
+            HStack {
+                Text("Welcom to Diamond!")
+                Image("Linearicons_diamond")
+                    .renderingMode(.template)
+                    .foregroundStyle(.white)
+            }
+            .bold()
+            .frame(maxWidth: .infinity)
+            .opacity(isShowWelcome ? 1 : 0)
+            
             Section {
                 KeyboardShortcuts.Recorder("Generate Random String Shortcut:", name: .generateRandomString)
+                
+                HStack {
+                    Text("Number of String:")
+                    Spacer()
+                    NumberPicker(selectedNumber: $selectedNumber)
+                }
             } footer: {
                 VStack {
                     Image("Group 55")
@@ -61,6 +79,12 @@ struct GeneralSettingsView: View {
         }
         .formStyle(.grouped)
         .frame(minWidth: 450, minHeight: 100)
+        .navigationTitle("Diamond")
+        .onAppear {
+            withAnimation {
+                isShowWelcome.toggle()
+            }
+        }
     }
     
     private func getAppVersion() -> String {
@@ -80,4 +104,18 @@ struct GeneralSettingsView: View {
 
 #Preview {
     GeneralSettingsView()
+}
+
+struct NumberPicker: View {
+    @Binding var selectedNumber: Int
+    let range: ClosedRange<Int> = 1...50
+    
+    var body: some View {
+        Picker("Select a number", selection: $selectedNumber) {
+            ForEach(range, id: \.self) { number in
+                Text("\(number)")
+            }
+        }
+        .labelsHidden()
+    }
 }
