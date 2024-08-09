@@ -14,6 +14,14 @@ struct RandomStringGeneratorApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     var body: some Scene {
+        WindowGroup {
+            SettingsView()
+        }
+        
+        Window("What's New", id: "whats-new") {
+            SettingsView()
+        }
+        
         Settings {
             SettingsView()
         }

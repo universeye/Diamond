@@ -83,14 +83,36 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 }
 
 struct PopoverView: View {
+    @Environment(\.openWindow) var openWindow
+    
     var body: some View {
         VStack(spacing: 10) {
             Text("Random String Generator")
                 .font(.headline)
+                .padding(.top)
             Text("Press the keyboard shortcut")
                 .font(.caption)
                 .multilineTextAlignment(.center)
             KeyboardShortcuts.Recorder("Shortcut:", name: .generateRandomString)
+            
+            Divider()
+                        
+            HStack {
+                Button(action: {
+                    openWindow(id: "whats-new")
+                }) {
+                    Label("Settings", systemImage: "gear")
+                }
+                
+                Spacer()
+                
+                Button(action: {
+                    NSApplication.shared.terminate(nil)
+                }) {
+                    Label("Quit", systemImage: "rectangle.portrait.and.arrow.right")
+                }
+            }
+            .padding(.bottom)
         }
         .padding()
     }
@@ -105,3 +127,4 @@ struct SettingsView: View {
         .frame(width: 300, height: 100)
     }
 }
+

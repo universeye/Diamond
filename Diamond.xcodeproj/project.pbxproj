@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF0A24CC2C64EB0B0083495A /* GeneralSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0A24CB2C64EB0B0083495A /* GeneralSettingsView.swift */; };
 		BF5D0CC32C6488F800ECD9B8 /* DiamondApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5D0CC22C6488F800ECD9B8 /* DiamondApp.swift */; };
 		BF5D0CC52C6488F800ECD9B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5D0CC42C6488F800ECD9B8 /* ContentView.swift */; };
 		BF5D0CC72C6488F900ECD9B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF5D0CC62C6488F900ECD9B8 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF0A24CB2C64EB0B0083495A /* GeneralSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettingsView.swift; sourceTree = "<group>"; };
 		BF5D0CBF2C6488F800ECD9B8 /* Diamond.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diamond.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5D0CC22C6488F800ECD9B8 /* DiamondApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondApp.swift; sourceTree = "<group>"; };
 		BF5D0CC42C6488F800ECD9B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				BF5D0CC22C6488F800ECD9B8 /* DiamondApp.swift */,
 				BF5D0CC42C6488F800ECD9B8 /* ContentView.swift */,
+				BF0A24CB2C64EB0B0083495A /* GeneralSettingsView.swift */,
 				BF5D0CC62C6488F900ECD9B8 /* Assets.xcassets */,
 				BF5D0CCB2C6488F900ECD9B8 /* Diamond.entitlements */,
 				BF5D0CC82C6488F900ECD9B8 /* Preview Content */,
@@ -149,6 +152,7 @@
 			files = (
 				BF5D0CC52C6488F800ECD9B8 /* ContentView.swift in Sources */,
 				BF5D0CC32C6488F800ECD9B8 /* DiamondApp.swift in Sources */,
+				BF0A24CC2C64EB0B0083495A /* GeneralSettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
