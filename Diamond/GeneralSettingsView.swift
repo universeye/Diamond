@@ -78,7 +78,7 @@ struct GeneralSettingsView: View {
             //            }
         }
         .formStyle(.grouped)
-        .frame(minWidth: 450, minHeight: 100)
+        .frame(minWidth: 450, minHeight: 200)
         .navigationTitle("Diamond")
         .onAppear {
             withAnimation {

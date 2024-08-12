@@ -1,5 +1,5 @@
 {
-  "originHash" : "5da8aea243ab7d65ebfeffe15fc46957f4eab2e97ede72ca0e988bac528bbbd0",
+  "originHash" : "3f9920659b9918d076fb254f66f8e66cb94fb93d895bcaae38d719ed96c4b408",
   "pins" : [
     {
       "identity" : "keyboardshortcuts",
@@ -8,6 +8,33 @@
       "state" : {
         "revision" : "2e5f15581fefb821d4b366e57d817be8bf12aa58",
         "version" : "2.0.1"
+      }
+    },
+    {
+      "identity" : "releases",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/JohnSundell/Releases.git",
+      "state" : {
+        "revision" : "566ef26cf2f5bb5280ff565761682af91b9398db",
+        "version" : "5.0.0"
+      }
+    },
+    {
+      "identity" : "require",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/JohnSundell/Require.git",
+      "state" : {
+        "revision" : "7cfbd0d8a2dede0e01f6f0d8ab2c7acef1df112e",
+        "version" : "2.0.1"
+      }
+    },
+    {
+      "identity" : "shellout",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/JohnSundell/ShellOut.git",
+      "state" : {
+        "revision" : "e1577acf2b6e90086d01a6d5e2b8efdaae033568",
+        "version" : "2.3.0"
       }
     }
   ],
