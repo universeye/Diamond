@@ -26,6 +26,10 @@ Free & Open Source
 
 Manually download it in the [release](https://github.com/universeye/Diamond/releases) page.
 
+Drag it into Application.
+
+<img src= "ReadmeSources/installation.png" width = 50% height = 50%>  
+
 > No need to worry about the reliability of non-App Store installations, Diamond is signed and [notarized](https://developer.apple.com/documentation/security/notarizing_macos_software_before_distribution).
 
 # Screenshots
