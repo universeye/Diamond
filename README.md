@@ -20,8 +20,13 @@ Free & Open Source
 
 
 # Download
+<!---
+[Download on the App Store](https://apps.apple.com/tw/app/picpulse-batch-images-resizer/id6503602987?mt=12) or manually download it in the [release](https://github.com/universeye/PreShots/releases) page.
+-->
 
+Manually download it in the [release](https://github.com/universeye/Diamond/releases) page.
 
+> No need to worry about the reliability of non-App Store installations, Diamond is signed and [notarized](https://developer.apple.com/documentation/security/notarizing_macos_software_before_distribution).
 
 # Screenshots
 
