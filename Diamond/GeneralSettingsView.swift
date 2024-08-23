@@ -9,9 +9,6 @@ import SwiftUI
 import KeyboardShortcuts
 
 struct GeneralSettingsView: View {
-    @State private var settingOneValue = false
-    @State private var settingTwoValue = false
-    @State private var settingThreeValue = false
     @State private var isShowWelcome = false
     @AppStorage("selectedNumber") var selectedNumber: Int = 10
     
@@ -46,36 +43,6 @@ struct GeneralSettingsView: View {
                 }
                 .frame(maxWidth: .infinity)
             }
-            
-            //            Section {
-            //                Toggle(isOn: $settingTwoValue, label: {
-            //                    VStack(alignment: .leading) {
-            //                        Text("Launch at login")
-            //                            .font(.title2)
-            //
-            //                    }
-            //                })
-            //
-            //                Toggle(isOn: $settingThreeValue, label: {
-            //                    VStack(alignment: .leading) {
-            //                        Text("Check for updates")
-            //                            .font(.title2)
-            //                        Text("Subtitle for the setting, explaining what it does")
-            //                    }
-            //                })
-            //            } header: {
-            //                Text("Section two")
-            //            } footer: {
-            //                VStack {
-            //                    Image("Group 55")
-            //                        .resizable()
-            //                        .scaledToFill()
-            //                        .frame(width: 40, height: 40)
-            //                    Text("\(NSLocalizedString("Version", comment: "Version")) (\(Bundle.main.releaseAndBuildNumberDouble))")
-            //                    Text("© 2024 Universeye")
-            //                }
-            //                .frame(maxWidth: .infinity)
-            //            }
         }
         .formStyle(.grouped)
         .frame(minWidth: 450, minHeight: 200)
@@ -106,16 +73,4 @@ struct GeneralSettingsView: View {
     GeneralSettingsView()
 }
 
-struct NumberPicker: View {
-    @Binding var selectedNumber: Int
-    let range: ClosedRange<Int> = 1...50
-    
-    var body: some View {
-        Picker("Select a number", selection: $selectedNumber) {
-            ForEach(range, id: \.self) { number in
-                Text("\(number)")
-            }
-        }
-        .labelsHidden()
-    }
-}
+

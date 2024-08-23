@@ -13,8 +13,8 @@
 		BF5D0CC72C6488F900ECD9B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF5D0CC62C6488F900ECD9B8 /* Assets.xcassets */; };
 		BF5D0CCA2C6488F900ECD9B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF5D0CC92C6488F900ECD9B8 /* Preview Assets.xcassets */; };
 		BF5D0CD32C64896F00ECD9B8 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = BF5D0CD22C64896F00ECD9B8 /* KeyboardShortcuts */; };
+		BF608F962C7853E5009DA957 /* NumberPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF608F952C7853E5009DA957 /* NumberPicker.swift */; };
 		BFF583922C65E50C00734C86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF583912C65E50C00734C86 /* AppDelegate.swift */; };
-		BFF98ED02C69F86500CD7D85 /* Releases in Frameworks */ = {isa = PBXBuildFile; productRef = BFF98ECF2C69F86500CD7D85 /* Releases */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +25,7 @@
 		BF5D0CC62C6488F900ECD9B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF5D0CC92C6488F900ECD9B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF5D0CCB2C6488F900ECD9B8 /* Diamond.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Diamond.entitlements; sourceTree = "<group>"; };
+		BF608F952C7853E5009DA957 /* NumberPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPicker.swift; sourceTree = "<group>"; };
 		BFF583912C65E50C00734C86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFF583972C65F24600734C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -34,7 +35,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFF98ED02C69F86500CD7D85 /* Releases in Frameworks */,
 				BF5D0CD32C64896F00ECD9B8 /* KeyboardShortcuts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,6 +66,7 @@
 				BFF583912C65E50C00734C86 /* AppDelegate.swift */,
 				BF5D0CC42C6488F800ECD9B8 /* ContentView.swift */,
 				BF0A24CB2C64EB0B0083495A /* GeneralSettingsView.swift */,
+				BF608F952C7853E5009DA957 /* NumberPicker.swift */,
 				BF5D0CC62C6488F900ECD9B8 /* Assets.xcassets */,
 				BF5D0CCB2C6488F900ECD9B8 /* Diamond.entitlements */,
 				BF5D0CC82C6488F900ECD9B8 /* Preview Content */,
@@ -99,7 +100,6 @@
 			name = Diamond;
 			packageProductDependencies = (
 				BF5D0CD22C64896F00ECD9B8 /* KeyboardShortcuts */,
-				BFF98ECF2C69F86500CD7D85 /* Releases */,
 			);
 			productName = Diamond;
 			productReference = BF5D0CBF2C6488F800ECD9B8 /* Diamond.app */;
@@ -131,7 +131,6 @@
 			mainGroup = BF5D0CB62C6488F800ECD9B8;
 			packageReferences = (
 				BF5D0CD12C64896F00ECD9B8 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
-				BFF98ECE2C69F86500CD7D85 /* XCRemoteSwiftPackageReference "Releases" */,
 			);
 			productRefGroup = BF5D0CC02C6488F800ECD9B8 /* Products */;
 			projectDirPath = "";
@@ -159,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF608F962C7853E5009DA957 /* NumberPicker.swift in Sources */,
 				BFF583922C65E50C00734C86 /* AppDelegate.swift in Sources */,
 				BF5D0CC52C6488F800ECD9B8 /* ContentView.swift in Sources */,
 				BF5D0CC32C6488F800ECD9B8 /* DiamondApp.swift in Sources */,
@@ -383,14 +383,6 @@
 				minimumVersion = 2.0.1;
 			};
 		};
-		BFF98ECE2C69F86500CD7D85 /* XCRemoteSwiftPackageReference "Releases" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/JohnSundell/Releases.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -398,11 +390,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = BF5D0CD12C64896F00ECD9B8 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
 			productName = KeyboardShortcuts;
-		};
-		BFF98ECF2C69F86500CD7D85 /* Releases */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BFF98ECE2C69F86500CD7D85 /* XCRemoteSwiftPackageReference "Releases" */;
-			productName = Releases;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
