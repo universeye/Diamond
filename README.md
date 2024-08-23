@@ -6,7 +6,7 @@
 ![](https://img.shields.io/badge/Platform-macOS_14.0+-blue?color=007bff)
 ![](https://img.shields.io/badge/UI-SwiftUI-green)
 ![](https://img.shields.io/badge/License-MIT-orange)
-![](https://badgen.net/github/release/universeye/PreShots)
+![](https://badgen.net/github/release/universeye/Diamond)
 
 <!---
 ![](https://badgen.net/github/last-commit/universeye/PreShots)
@@ -21,14 +21,12 @@ Free & Open Source
 
 # Download
 
-[Download on the App Store](https://apps.apple.com/tw/app/picpulse-batch-images-resizer/id6503602987?mt=12)
+
 
 # Screenshots
 
-<img src= "ReadmeSources/preview1.png" width = 50% height = 50%>  
-<img src= "ReadmeSources/preview2.png" width = 50% height = 50%>
-<img src= "ReadmeSources/preview3.png" width = 50% height = 50%>
-
+<img src= "ReadmeSources/screenshot1.png" width = 50% height = 50%>  
+<img src= "ReadmeSources/screenshot2.png" width = 50% height = 50%>
 
 
 ## Welcome to pull requests for these
